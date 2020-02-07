@@ -36,6 +36,8 @@ In the context of your namespace go to the catalog and navigate to "Services" an
 
 ![GCP Service Catalog](../assets/GCP&#32;Cloud&#32;Storage.png)
 
+If you, can't find it, the deployment of the broker might still be in progress. Hence give it a little bit of time.
+
 Click on the tile and select `Add`:
 
 ![GCP Storage Instance](../assets/InstanceCreateGCP.png)
@@ -53,7 +55,7 @@ In the configuration dialog, add the following values and click `Create Instance
 
 ## Create Lambda Function to store SAP Commerce Cloud Order
 
-The Lambda Function is home to the actual extension logic. It is written in [Node.js 8](https://nodejs.org/en/download/releases/). Lambda Functions let developers focus on the business logic alone and delegate frequent challenges such as packaging the code (into a [container](https://en.wikipedia.org/wiki/Docker_(software) or anything equivalent), scaling it to accomodate the to the current load to the underlying serverless framework.
+The Lambda Function is home to the actual extension logic. It is written in [Node.js 8](https://nodejs.org/en/download/releases/). Lambda Functions let developers focus on the business logic alone and delegate frequent challenges such as packaging the code (into a [container](https://en.wikipedia.org/wiki/Docker_(software)) or anything equivalent), scaling it to accomodate the to the current load to the underlying serverless framework.
 
 In the Kyma runtime, a Lambda Function is best created from the [Console UI](https://kyma-project.io/docs/components/console). For this go to "Lambdas" and select `Add Lambda`:
 
@@ -115,7 +117,7 @@ After Saving the Lambda Function. you can switch to the Testing Tab. Here you ha
 After Testing the Lambda you can inspect the logs and check whether the call was successful:
 
 ![Test Lambda 4](../assets/TestLambda4.png)
-![Test Lambda 5](../assets/TestLambda5.png)
+
 
 Before exiting, disable the http exposure by removing the "http" tag from the triggers.
 

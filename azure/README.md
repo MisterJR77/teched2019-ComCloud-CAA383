@@ -12,13 +12,14 @@ The second lambda function is exposed through an HTTPS endpoint and serves the s
 
 ## Create Service Instance of Azure Blob Storage
 
-In the context of your namespace go to the catalog and navigate to "Services" and search for `Azure Storage Blob Storage Account And Container`:
+In the context of your namespace go to the catalog and navigate to "Services" and search for `Azure Storage Blob Storage Account And Container`. Installing the broker takes some time. Hence you might experience a slight delay. Please retry if you can't find the respective service.
 
-![GCP Service Catalog](../assets/CatalogAzure.png)
+![Azure Service Catalog](../assets/CatalogAzure.png)
+
 
 Click on the tile and select `Add`:
 
-![GCP Storage Instance](../assets/InstanceCreateAzure.png)
+![Azure Storage Instance](../assets/InstanceCreateAzure.png)
 
 In the configuration dialog, add the following values and click `Create Instance`:
 
@@ -93,7 +94,7 @@ After Saving the Lambda Function. you can switch to the Testing Tab. Here you ha
 After Testing the Lambda you can inspect the logs and check whether the call was successful:
 
 ![Test Lambda 14](../assets/TestLambda14.png)
-![Test Lambda 15](../assets/TestLambda15.png)
+
 
 Before exiting, disable the http exposure by removing the "http" tag from the triggers.
 

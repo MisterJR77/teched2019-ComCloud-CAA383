@@ -8,7 +8,7 @@ In this part of the session you are going to setup a service broker configuratio
 
 In these steps we will deployment a Kubernetes secret file which contains the necessary authentication information to configure the Service Broker connection to the Google Cloud Platform.  The steps necessary to obtain the authentication information will have already been done by your instructor and are detailed within the Google Cloud Platform Service Broker - Service Catalog Tile.  We will simply deploy the Kubernetes secret as apposed to generating it.
 
-Within the context of your namespace choose the `Oveview` menu option and then choose `Deploy new resource`
+Within the context of your `default` namespace choose the `Oveview` menu option and then choose `Deploy new resource`
 
 ![Deploy Resource](../assets/GCPBroker3.png)
 
